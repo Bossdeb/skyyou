@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love 💖</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fade-in {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-fade-in {
+            animation: fade-in 0.5s ease-out;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-pink-200 text-center">
+
+    <button onclick="showCard()" 
+        class="px-6 py-3 bg-pink-500 text-white rounded-full shadow-md hover:bg-pink-600 transition">
+        กดเพื่อเปิดการ์ด HBD 🎉
+    </button>
+
+    <div id="birthdayCard" 
+        class="hidden mt-6 bg-white p-6 rounded-2xl shadow-lg max-w-sm text-center border-4 border-pink-300 animate-fade-in">
+        <h1 class="text-3xl font-bold text-pink-600 mb-2">Happy Birthday 🎂</h1>
+        <p class="text-pink-800 mb-4">ขอให้วันนี้เป็นวันที่พิเศษสุดสำหรับเธอ 💖</p>
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxmjKz5fMl56r4K6TXfZ5cw06a8oHZDro_g&s" alt="Cake"
+             class="rounded-full shadow-md mx-auto">
+
+        <p class="mt-4 text-pink-700">Hbd nakub jeena wyab! 💕</p>
+    </div>
+
+    <script>
+        function showCard() {
+            document.getElementById("birthdayCard").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
